@@ -1,4 +1,4 @@
-[
+window.TOURNAMENTS = [
   {
     "slug": "world-cup-2026",
     "competition": "world-cup",
@@ -26454,4 +26454,4 @@
       }
     ]
   }
-]
+];
