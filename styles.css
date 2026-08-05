@@ -82,21 +82,27 @@ h1 {
 
 .menu-item:hover { background: #cbdfee; }
 
-.dinosaur-menu-item {
-  background: #e6f2cd;
-  border-color: #44752e;
-  color: #28551f;
+.soccer-menu-item {
+  background: #ffd194;
+  border-color: #b85b20;
+  color: #713315;
 }
 
-.dinosaur-menu-item:hover { background: #d7e9b5; }
+.soccer-menu-item:hover { background: #ffc475; }
+
+.dinosaur-menu-item {
+  background: #dcecf8;
+  border-color: #245c81;
+  color: #173f5f;
+}
+
+.dinosaur-menu-item:hover { background: #cbdfee; }
 
 .dinosaur-mascot {
   flex: 0 0 auto;
   width: clamp(92px, 17vw, 132px);
   height: clamp(92px, 17vw, 132px);
-  object-fit: cover;
-  border: 3px solid #e4962d;
-  border-radius: 24px;
+  object-fit: contain;
 }
 
 .dinosaur-menu-label { line-height: .9; }
@@ -292,9 +298,7 @@ h1 {
 .dinosaur-heading img {
   width: 180px;
   height: 180px;
-  object-fit: cover;
-  border: 4px solid #e4962d;
-  border-radius: 34px;
+  object-fit: contain;
   transform: rotate(2deg);
 }
 
