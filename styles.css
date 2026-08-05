@@ -191,10 +191,7 @@ h1 {
   flex: 0 0 auto;
   width: clamp(92px, 17vw, 132px);
   height: clamp(92px, 17vw, 132px);
-  object-fit: cover;
-  background: #fff;
-  border: 3px solid #24292e;
-  border-radius: 16px;
+  object-fit: contain;
   transform: rotate(-2deg);
 }
 .truck-menu-label { line-height: .9; }
