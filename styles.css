@@ -140,9 +140,19 @@ h1 {
 .copa-america { background: var(--orange); }
 
 .tournament-name {
+  display: block;
   font-size: 1.12rem;
   font-weight: 700;
   line-height: 1.25;
+}
+
+.tournament-host {
+  display: block;
+  margin-top: 3px;
+  color: #36566d;
+  font-size: .88rem;
+  font-weight: 600;
+  line-height: 1.3;
 }
 
 .tournament-count,
@@ -151,7 +161,7 @@ h1 {
   font-size: .8rem;
 }
 
-.tournament-count { display: block; margin-top: 4px; }
+.tournament-count { display: block; margin-top: 3px; }
 
 .stage {
   margin: 0 0 26px;
