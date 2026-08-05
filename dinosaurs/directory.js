@@ -18,8 +18,7 @@
     const picture = item.image
       ? `<img class="creature-thumb" src="${escapeHtml(item.image.src)}" alt="${escapeHtml(item.image.alt)}">`
       : `<div class="creature-placeholder group-${escapeHtml(item.type.toLowerCase().replace(/[^a-z]+/g, "-"))}" aria-hidden="true"><span>${escapeHtml(item.name.charAt(0))}</span><small>${escapeHtml(item.group)}</small></div>`;
-    const friendBadge = item.type === "Dinosaur" ? "" : `<span class="friend-badge">${escapeHtml(item.type)}</span>`;
-    return `<a class="creature-tile" href="card.html?creature=${encodeURIComponent(item.slug)}">${picture}<span class="creature-tile-copy"><strong>${escapeHtml(item.name)}</strong><em>${escapeHtml(item.period)}</em><small>${escapeHtml(item.group)}</small>${friendBadge}</span><span class="tile-arrow" aria-hidden="true">&rarr;</span></a>`;
+    return `<a class="creature-tile" href="card.html?creature=${encodeURIComponent(item.slug)}">${picture}<span class="creature-tile-copy"><strong>${escapeHtml(item.name)}</strong><small>${escapeHtml(item.group)}</small></span></a>`;
   }
 
   function render() {

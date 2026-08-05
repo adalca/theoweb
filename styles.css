@@ -353,7 +353,7 @@ h1 {
 
 .creature-tile {
   display: grid;
-  grid-template-columns: 82px minmax(0, 1fr) auto;
+  grid-template-columns: 82px minmax(0, 1fr);
   min-height: 108px;
   align-items: center;
   gap: 13px;
@@ -374,7 +374,7 @@ h1 {
   height: 82px;
   border-radius: 11px;
 }
-.creature-thumb { object-fit: cover; background: #f3ecd9; }
+.creature-thumb { object-fit: contain; background: #f3ecd9; }
 .creature-placeholder,
 .card-placeholder {
   display: flex;
@@ -392,12 +392,9 @@ h1 {
 .group-synapsid, .group-crocodyliform { background: #f7ddd3; color: #8d432b; }
 .creature-tile-copy { min-width: 0; }
 .creature-tile-copy strong,
-.creature-tile-copy em,
 .creature-tile-copy small { display: block; }
 .creature-tile-copy strong { font-size: 1rem; line-height: 1.15; }
-.creature-tile-copy em { margin-top: 5px; color: #5d6871; font-size: .75rem; }
-.creature-tile-copy small { margin-top: 3px; color: #416531; font-size: .72rem; font-weight: 700; }
-.friend-badge,
+.creature-tile-copy small { margin-top: 7px; color: #416531; font-size: .75rem; font-weight: 700; }
 .type-pill {
   display: inline-block !important;
   width: fit-content;
@@ -412,7 +409,6 @@ h1 {
   letter-spacing: .03em;
   text-transform: uppercase;
 }
-.tile-arrow { color: #63824d; font-size: 1.25rem; }
 
 .card-top-nav { display: flex; justify-content: space-between; }
 .dinosaur-card {

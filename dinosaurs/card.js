@@ -5,6 +5,7 @@
   const slug = new URLSearchParams(window.location.search).get("creature");
   const index = creatures.findIndex((item) => item.slug === slug);
   const escapeHtml = (value) => String(value).replace(/[&<>'"]/g, (character) => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", "'":"&#39;", '"':"&quot;" })[character]);
+  const formatNumber = (value) => Number(value).toLocaleString("en-US", { maximumFractionDigits: 2 });
 
   if (index < 0) {
     document.title = "Creature not found | Theo's Webhouse";
@@ -16,20 +17,20 @@
   document.title = `${item.name} | Theo's Webhouse`;
   const range = (values, unit, conversion, convertedUnit) => {
     if (!values || values[0] == null) return "Not known";
-    const metric = values[0] === values[1] ? `${values[0]} ${unit}` : `${values[0]}–${values[1]} ${unit}`;
+    const metric = values[0] === values[1] ? `${formatNumber(values[0])} ${unit}` : `${formatNumber(values[0])}–${formatNumber(values[1])} ${unit}`;
     const converted = values.map((value) => Math.round(value * conversion));
-    const imperial = converted[0] === converted[1] ? `${converted[0]} ${convertedUnit}` : `${converted[0]}–${converted[1]} ${convertedUnit}`;
+    const imperial = converted[0] === converted[1] ? `${formatNumber(converted[0])} ${convertedUnit}` : `${formatNumber(converted[0])}–${formatNumber(converted[1])} ${convertedUnit}`;
     return `${metric} (${imperial})`;
   };
   const factRow = (label, value) => `<div class="fact-row"><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`;
   const picture = item.image
-    ? `<figure class="creature-figure"><img src="${escapeHtml(item.image.src)}" alt="${escapeHtml(item.image.alt)}"><figcaption>Illustration by <a href="${escapeHtml(item.image.page)}">${escapeHtml(item.image.artist)}</a>, <a href="${escapeHtml(item.image.licenseUrl)}">${escapeHtml(item.image.license)}</a>. Colors and soft tissues in reconstructions are partly informed guesses.</figcaption></figure>`
+    ? `<figure class="creature-figure"><img src="${escapeHtml(item.image.src)}" alt="${escapeHtml(item.image.alt)}"><figcaption>Image by <a href="${escapeHtml(item.image.page)}">${escapeHtml(item.image.artist)}</a>, <a href="${escapeHtml(item.image.licenseUrl)}">${escapeHtml(item.image.license)}</a>. Colors and soft tissues in reconstructions are partly informed guesses.</figcaption></figure>`
     : `<div class="card-placeholder group-${escapeHtml(item.type.toLowerCase().replace(/[^a-z]+/g, "-"))}" role="img" aria-label="No reusable illustration is available for ${escapeHtml(item.name)}"><span>${escapeHtml(item.name.charAt(0))}</span><small>Picture coming someday</small></div>`;
   const friendNote = item.type === "Dinosaur" ? "" : `<aside class="not-a-dinosaur"><strong>Friend, not a dinosaur!</strong> ${escapeHtml(item.name)} was a ${escapeHtml(item.type.toLowerCase())}. It belongs here because it lived before, alongside, or near the age of dinosaurs.</aside>`;
   const wingspan = item.wingspan ? factRow("Wingspan", range(item.wingspan, "m", 3.28084, "ft")) : "";
 
   container.innerHTML = `<article class="dinosaur-card">
-    <header class="card-title"><div><span class="type-pill">${escapeHtml(item.type)}</span><p class="eyebrow">Prehistoric creature card</p><h1>${escapeHtml(item.name)}</h1><p class="scientific-name"><i>${escapeHtml(item.scientificName)}</i></p><p class="name-notes"><strong>Say it:</strong> ${escapeHtml(item.pronunciation)} <span aria-hidden="true">&bull;</span> <strong>Name means:</strong> “${escapeHtml(item.meaning)}”</p></div></header>
+    <header class="card-title"><div><span class="type-pill">${escapeHtml(item.type)}</span><h1>${escapeHtml(item.name)}</h1><p class="scientific-name"><i>${escapeHtml(item.scientificName)}</i></p><p class="name-notes"><strong>Say it:</strong> ${escapeHtml(item.pronunciation)} <span aria-hidden="true">&bull;</span> <strong>Name means:</strong> “${escapeHtml(item.meaning)}”</p></div></header>
     ${picture}
     ${friendNote}
     <dl class="fact-grid">
