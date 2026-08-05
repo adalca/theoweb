@@ -91,12 +91,12 @@ h1 {
 .soccer-menu-item:hover { background: #ffc475; }
 
 .hockey-menu-item {
-  background: #e6f1fb;
-  border-color: #315d87;
-  color: #173f5f;
+  background: #f6b8b8;
+  border-color: #a62e35;
+  color: #711f25;
 }
 
-.hockey-menu-item:hover { background: #d3e7f7; }
+.hockey-menu-item:hover { background: #f29a9f; }
 
 .hockey-mark {
   display: inline-flex;
@@ -105,10 +105,6 @@ h1 {
   height: clamp(92px, 17vw, 132px);
   align-items: center;
   justify-content: center;
-  background: #fff;
-  border: 3px solid #315d87;
-  border-radius: 50%;
-  box-shadow: inset 0 -10px 0 #dbe8f2;
   font-size: clamp(3.3rem, 9vw, 5.2rem);
 }
 
@@ -313,10 +309,6 @@ h1 {
   height: 112px;
   align-items: center;
   justify-content: center;
-  background: #fff;
-  border: 3px solid #315d87;
-  border-radius: 50%;
-  box-shadow: inset 0 -9px 0 #dbe8f2, 0 5px 0 rgba(23, 63, 95, .1);
   font-size: 4.3rem;
 }
 
