@@ -91,12 +91,12 @@ h1 {
 .soccer-menu-item:hover { background: #ffc475; }
 
 .hockey-menu-item {
-  background: #f6b8b8;
+  background: #f9d2d2;
   border-color: #a62e35;
   color: #711f25;
 }
 
-.hockey-menu-item:hover { background: #f29a9f; }
+.hockey-menu-item:hover { background: #f4bcbc; }
 
 .hockey-mark {
   display: inline-flex;
