@@ -181,6 +181,31 @@ h1 {
   letter-spacing: .02em;
 }
 
+.truck-menu-item {
+  background: #ffd95e;
+  border-color: #24292e;
+  color: #24292e;
+}
+.truck-menu-item:hover { background: #ffc83d; }
+.truck-menu-photo {
+  flex: 0 0 auto;
+  width: clamp(92px, 17vw, 132px);
+  height: clamp(92px, 17vw, 132px);
+  object-fit: cover;
+  background: #fff;
+  border: 3px solid #24292e;
+  border-radius: 16px;
+  transform: rotate(-2deg);
+}
+.truck-menu-label { line-height: .9; }
+.truck-menu-label small {
+  display: block;
+  margin-top: 12px;
+  color: #174f7a;
+  font-size: .45em;
+  letter-spacing: .02em;
+}
+
 .soccer-ball {
   flex: 0 0 auto;
   width: clamp(92px, 17vw, 132px);
@@ -695,6 +720,176 @@ h1 {
 .not-found { padding: 42px; background: #fff; border: 2px solid #a9c6da; border-radius: 18px; text-align: center; }
 .button-link { display: inline-block; margin-top: 10px; padding: 12px 18px; background: #245c81; border-radius: 9px; color: white; font-weight: 700; text-decoration: none; }
 
+/* Trucks and mighty machines */
+.truck-page {
+  background:
+    linear-gradient(135deg, rgba(255, 205, 60, .13) 25%, transparent 25%) 0 0 / 34px 34px,
+    #eef5f8;
+}
+.truck-directory,
+.truck-card-page { width: min(1080px, calc(100% - 28px)); }
+.truck-page .back-link { color: #174f7a; }
+.truck-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 190px;
+  align-items: center;
+  gap: 28px;
+  margin: 2px 0 24px;
+}
+.truck-heading h1 { margin-bottom: 20px; color: #20262b; font-weight: 900; letter-spacing: -.04em; }
+.truck-heading h1 small {
+  display: block;
+  margin-top: 8px;
+  color: #174f7a;
+  font-size: .38em;
+  letter-spacing: 0;
+}
+.truck-heading .intro { max-width: 700px; margin: 0; font-size: 1.12rem; font-weight: 700; line-height: 1.5; }
+.truck-hero-mark {
+  display: grid;
+  width: 180px;
+  height: 150px;
+  place-items: center;
+  background: #ffd23f;
+  border: 5px solid #24292e;
+  border-radius: 30px 12px 30px 12px;
+  box-shadow: 10px 10px 0 #ed7d24;
+  transform: rotate(3deg);
+}
+.truck-hero-mark::before { content: "🚚"; display: block; font-size: 5.8rem; line-height: 1; }
+.truck-hero-mark span {
+  margin-top: -25px;
+  padding: 4px 8px;
+  background: #fff;
+  border: 2px solid #24292e;
+  border-radius: 6px;
+  font-size: .73rem;
+  font-weight: 900;
+  letter-spacing: .08em;
+}
+.truck-sort-panel {
+  display: grid;
+  grid-template-columns: 1fr auto minmax(210px, 270px);
+  align-items: center;
+  gap: 16px;
+  margin: 28px 0 32px;
+  padding: 18px 20px;
+  background: #ffd23f;
+  border: 4px solid #24292e;
+  border-radius: 16px;
+  box-shadow: 7px 7px 0 rgba(36, 41, 46, .16);
+}
+.truck-sort-panel h2 { margin: 0; font-size: 1.18rem; }
+.truck-sort-panel p { margin: 4px 0 0; color: #4d4b3f; font-size: .87rem; font-weight: 700; }
+.truck-sort-panel label { font-weight: 900; }
+.truck-sort-panel select {
+  min-height: 50px;
+  padding: 0 42px 0 14px;
+  background: #fff;
+  border: 3px solid #24292e;
+  border-radius: 9px;
+  color: #20262b;
+  font: inherit;
+  font-weight: 800;
+}
+.truck-sort-panel select:focus-visible { outline: 4px solid #176b9d; outline-offset: 3px; }
+.truck-group { margin: 36px 0; }
+.truck-group > h2 {
+  display: inline-block;
+  margin: 0 0 15px;
+  padding: 7px 13px;
+  background: #174f7a;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 1.35rem;
+}
+.truck-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.truck-tile {
+  display: grid;
+  grid-template-rows: 160px auto;
+  min-width: 0;
+  overflow: hidden;
+  background: #fff;
+  border: 3px solid #24292e;
+  border-radius: 14px;
+  box-shadow: 5px 5px 0 rgba(36, 41, 46, .15);
+  text-decoration: none;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.truck-tile:hover { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 #ed7d24; }
+.truck-thumb { width: 100%; height: 160px; object-fit: cover; background: #dae9ef; border-bottom: 3px solid #24292e; }
+.truck-tile-copy { display: block; min-width: 0; padding: 14px 15px 16px; }
+.truck-tile-copy strong { display: block; font-size: 1.12rem; line-height: 1.15; }
+.truck-tile-copy small { display: block; margin-top: 7px; color: #174f7a; font-size: .76rem; font-weight: 900; letter-spacing: .04em; text-transform: uppercase; }
+.truck-card {
+  overflow: hidden;
+  background: #fff;
+  border: 4px solid #24292e;
+  border-radius: 20px;
+  box-shadow: 9px 9px 0 rgba(36, 41, 46, .15);
+}
+.truck-card-title {
+  padding: 28px clamp(20px, 5vw, 50px) 24px;
+  background: linear-gradient(120deg, #ffd23f, #ffed9f);
+  border-bottom: 4px solid #24292e;
+}
+.truck-card-title h1 { margin: 8px 0 5px; color: #20262b; font-weight: 900; letter-spacing: -.035em; }
+.truck-card-title > p:last-child { max-width: 730px; margin: 14px 0 0; font-size: 1.12rem; font-weight: 700; line-height: 1.5; }
+.truck-category-pill {
+  display: inline-block;
+  padding: 5px 9px;
+  background: #174f7a;
+  border-radius: 999px;
+  color: #fff;
+  font-size: .7rem;
+  font-weight: 900;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.truck-alternate { margin: 0 !important; color: #4a5054; font-size: .92rem !important; font-weight: 400 !important; }
+.truck-figure { margin: 0; background: #dae9ef; border-bottom: 4px solid #24292e; }
+.truck-figure img { display: block; width: 100%; height: min(56vw, 570px); min-height: 310px; object-fit: cover; }
+.truck-figure figcaption { padding: 10px 18px; background: #fff; color: #59636b; font-size: .73rem; line-height: 1.45; }
+.truck-figure a, .truck-source a { color: #174f7a; }
+.truck-fact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 24px;
+  margin: 0;
+  padding: 24px clamp(20px, 5vw, 50px);
+}
+.truck-fact-row { padding: 14px 0; border-bottom: 2px dashed #c7d0d5; }
+.truck-fact-row:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.truck-fact-row dt { color: #174f7a; font-size: .72rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+.truck-fact-row dd { margin: 5px 0 0; font-weight: 700; line-height: 1.4; }
+.truck-stories {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  padding: 24px clamp(20px, 5vw, 50px) 4px;
+}
+.truck-stories > div { padding: 20px; background: #dcecf8; border: 3px solid #24292e; border-radius: 13px; box-shadow: 4px 4px 0 rgba(36, 41, 46, .12); }
+.truck-stories .truck-size-story { background: #fff0b9; }
+.truck-stories .truck-cool-story { background: #ffe0cf; }
+.truck-stories span { font-size: 1.65rem; }
+.truck-stories h2 { margin: 7px 0 8px; font-size: 1.08rem; }
+.truck-stories p { margin: 0; line-height: 1.55; }
+.truck-varies { margin: 0 clamp(20px, 5vw, 50px) 28px; padding: 15px 17px; background: #eef1f2; border-left: 7px solid #ed7d24; border-radius: 8px; color: #455057; line-height: 1.5; }
+.truck-source { padding: 17px clamp(20px, 5vw, 50px); background: #24292e; color: #fff; }
+.truck-source a { color: #ffd95e; }
+.truck-pagination { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 24px; }
+.truck-pagination a { min-height: 78px; padding: 14px 17px; background: #fff; border: 3px solid #24292e; border-radius: 11px; box-shadow: 4px 4px 0 rgba(36, 41, 46, .14); text-decoration: none; }
+.truck-pagination a:hover { box-shadow: 5px 5px 0 #ed7d24; }
+.truck-pagination small, .truck-pagination strong { display: block; }
+.truck-pagination small { margin-bottom: 6px; color: #59636b; }
+.truck-pagination .next-card { text-align: right; }
+.truck-not-found { padding: 48px 24px; background: #fff; border: 4px solid #24292e; border-radius: 18px; box-shadow: 8px 8px 0 #ffd23f; text-align: center; }
+.truck-button { display: inline-block; margin-top: 10px; padding: 12px 18px; background: #174f7a; border-radius: 9px; color: #fff; font-weight: 800; text-decoration: none; }
+
 @media (max-width: 560px) {
   .home, .page { width: min(100% - 20px, 900px); padding-top: 20px; }
   .menu-item { min-height: 100px; padding: 16px 18px; }
@@ -702,6 +897,7 @@ h1 {
   .hockey-mark { width: 88px; height: 88px; }
   .olympic-hockey-mark { width: 88px; height: 88px; }
   .dinosaur-mascot { width: 88px; height: 88px; }
+  .truck-menu-photo { width: 88px; height: 88px; }
   .tournament-row { grid-template-columns: 52px minmax(0, 1fr); padding-right: 12px; }
   .tournament-icon { width: 52px; height: 52px; }
   .year { display: none; }
@@ -719,6 +915,22 @@ h1 {
   .card-top-nav { gap: 12px; }
   .creature-pagination { grid-template-columns: 1fr; }
   .creature-pagination .next-card { text-align: left; }
+  .truck-heading { grid-template-columns: minmax(0, 1fr) 92px; gap: 14px; }
+  .truck-heading .intro { font-size: 1rem; }
+  .truck-hero-mark { width: 88px; height: 88px; border-width: 3px; border-radius: 18px 7px 18px 7px; box-shadow: 5px 5px 0 #ed7d24; }
+  .truck-hero-mark::before { font-size: 3.5rem; }
+  .truck-hero-mark span { display: none; }
+  .truck-sort-panel { grid-template-columns: 1fr; }
+  .truck-sort-panel label { margin-bottom: -8px; }
+  .truck-grid { grid-template-columns: 1fr; }
+  .truck-tile { grid-template-columns: 116px minmax(0, 1fr); grid-template-rows: 112px; }
+  .truck-thumb { height: 112px; border: 0; border-right: 3px solid #24292e; }
+  .truck-tile-copy { align-self: center; }
+  .truck-figure img { height: 60vw; min-height: 230px; }
+  .truck-fact-grid, .truck-stories { grid-template-columns: 1fr; }
+  .truck-fact-row:last-child:nth-child(odd) { grid-column: auto; }
+  .truck-pagination { grid-template-columns: 1fr; }
+  .truck-pagination .next-card { text-align: left; }
   .hockey-heading { grid-template-columns: 78px minmax(0, 1fr); gap: 12px; }
   .hockey-heading-mark { width: 78px; height: 78px; font-size: 3rem; }
   .hockey-heading h1 { margin-bottom: 16px; }
@@ -739,8 +951,12 @@ h1 {
 
 @media (min-width: 561px) and (max-width: 880px) {
   .creature-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .truck-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .truck-stories { grid-template-columns: 1fr 1fr; }
+  .truck-stories > div:first-child { grid-column: 1 / -1; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .creature-tile { transition: none; }
+  .truck-tile { transition: none; }
 }

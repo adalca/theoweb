@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Meet 36 mighty trucks and working machines, from excavators to fire engines to NASA's giant crawler.">
+  <title>Trucks and mighty machines | Theo's Webhouse</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="truck-page">
+  <main class="page truck-directory">
+    <a class="back-link" href="../index.html">&larr; Main menu</a>
+    <header class="truck-heading">
+      <div>
+        <p class="eyebrow">Theo's mighty machine yard</p>
+        <h1>Trucks! <small>(and other mighty machines)</small></h1>
+        <p class="intro">Meet 36 amazing machines that dig, lift, rescue, carry, sweep, spray, and even move spaceships.</p>
+      </div>
+      <div class="truck-hero-mark" aria-hidden="true"><span>HONK!</span></div>
+    </header>
+
+    <section class="truck-sort-panel" aria-labelledby="sort-heading">
+      <div>
+        <h2 id="sort-heading">Pick a way to explore</h2>
+        <p id="truck-count">36 mighty machines</p>
+      </div>
+      <label for="sort-trucks">List trucks</label>
+      <select id="sort-trucks">
+        <option value="random">Mix them up!</option>
+        <option value="name">A to Z</option>
+        <option value="category">By job</option>
+        <option value="size">Small to gigantic</option>
+      </select>
+    </section>
+
+    <div id="truck-list" aria-live="polite"></div>
+  </main>
+  <script src="data.js"></script>
+  <script src="image-data.js"></script>
+  <script src="directory.js"></script>
+</body>
+</html>
