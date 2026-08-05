@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NHL season scores</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="hockey-page">
+  <main class="page hockey-season">
+    <a class="back-link" href="index.html">← All NHL seasons</a>
+    <p class="eyebrow">National Hockey League</p>
+    <h1 id="title">NHL season scores</h1>
+    <p class="intro" id="summary">Loading scores…</p>
+
+    <div class="game-filter" id="game-filter" hidden>
+      <label for="team-filter">Find a team</label>
+      <input id="team-filter" type="search" placeholder="Try Rangers or Toronto" autocomplete="off">
+      <span id="filter-count" aria-live="polite"></span>
+    </div>
+
+    <div id="games"></div>
+  </main>
+
+  <script src="season.js"></script>
+</body>
+</html>
