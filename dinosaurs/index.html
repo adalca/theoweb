@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Meet 36 dinosaurs, pterosaurs, marine reptiles, and other prehistoric friends.">
+  <title>Dinosaurs (and friends) | Theo's Webhouse</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="dinosaur-page">
+  <main class="page dinosaur-directory">
+    <a class="back-link" href="../index.html">&larr; Main menu</a>
+    <header class="dinosaur-heading">
+      <div>
+        <p class="eyebrow">Theo's prehistoric collection</p>
+        <h1>Dinosaurs <small>(and friends)</small></h1>
+        <p class="intro">Meet 36 amazing animals from long, long ago. Some flew, some swam, and some were not actually dinosaurs!</p>
+      </div>
+      <img src="../assets/images/dinosaurs/cute-triceratops.webp" alt="A cute smiling green Triceratops">
+    </header>
+
+    <section class="sort-panel" aria-labelledby="sort-heading">
+      <div>
+        <h2 id="sort-heading">How should we explore?</h2>
+        <p id="result-count">36 prehistoric creatures</p>
+      </div>
+      <label for="sort-creatures">List dinosaurs</label>
+      <select id="sort-creatures">
+        <option value="random">Random</option>
+        <option value="name">By name</option>
+        <option value="region">By region</option>
+        <option value="group">By scientific group</option>
+      </select>
+    </section>
+
+    <div id="creature-list" aria-live="polite"></div>
+  </main>
+  <script src="data.js"></script>
+  <script src="directory.js"></script>
+</body>
+</html>

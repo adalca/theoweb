@@ -82,6 +82,32 @@ h1 {
 
 .menu-item:hover { background: #cbdfee; }
 
+.dinosaur-menu-item {
+  background: #e6f2cd;
+  border-color: #44752e;
+  color: #28551f;
+}
+
+.dinosaur-menu-item:hover { background: #d7e9b5; }
+
+.dinosaur-mascot {
+  flex: 0 0 auto;
+  width: clamp(92px, 17vw, 132px);
+  height: clamp(92px, 17vw, 132px);
+  object-fit: cover;
+  border: 3px solid #e4962d;
+  border-radius: 24px;
+}
+
+.dinosaur-menu-label { line-height: .9; }
+.dinosaur-menu-label small {
+  display: block;
+  margin-top: 12px;
+  color: #b04c24;
+  font-size: .48em;
+  letter-spacing: .02em;
+}
+
 .soccer-ball {
   flex: 0 0 auto;
   width: clamp(92px, 17vw, 132px);
@@ -236,10 +262,224 @@ h1 {
 .highlight-link { margin-left: 8px; color: #245c81; }
 .error { padding: 20px; background: white; border: 2px solid var(--border); border-radius: 10px; }
 
+/* Dinosaurs */
+.dinosaur-page {
+  background:
+    radial-gradient(circle at 12% 5%, rgba(244, 185, 64, .18) 0 90px, transparent 92px),
+    radial-gradient(circle at 92% 2%, rgba(93, 159, 65, .14) 0 130px, transparent 132px),
+    #fbf7e9;
+}
+
+.dinosaur-directory,
+.creature-page { width: min(1040px, calc(100% - 28px)); }
+
+.dinosaur-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 180px;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.dinosaur-heading h1 small {
+  display: block;
+  margin-top: 8px;
+  color: #b04c24;
+  font-size: .42em;
+}
+
+.dinosaur-heading .intro { margin: -16px 0 0; max-width: 680px; }
+.dinosaur-heading img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border: 4px solid #e4962d;
+  border-radius: 34px;
+  transform: rotate(2deg);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #537041;
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.sort-panel {
+  display: grid;
+  grid-template-columns: 1fr auto minmax(200px, 260px);
+  align-items: center;
+  gap: 14px;
+  margin: 22px 0 30px;
+  padding: 18px 20px;
+  background: #fff;
+  border: 2px solid #c9d8ae;
+  border-radius: 16px;
+  box-shadow: 0 6px 0 rgba(68, 117, 46, .1);
+}
+
+.sort-panel h2 { margin: 0; font-size: 1.15rem; }
+.sort-panel p { margin: 4px 0 0; color: var(--muted); font-size: .86rem; }
+.sort-panel label { font-weight: 700; }
+.sort-panel select {
+  min-height: 48px;
+  padding: 0 42px 0 14px;
+  background: #f7fbef;
+  border: 2px solid #73945d;
+  border-radius: 10px;
+  color: var(--text);
+  font: inherit;
+  font-weight: 700;
+}
+
+.creature-group { margin: 34px 0; }
+.creature-group > h2 {
+  margin: 0 0 14px;
+  color: #365b29;
+  font-size: 1.45rem;
+}
+
+.creature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.creature-tile {
+  display: grid;
+  grid-template-columns: 82px minmax(0, 1fr) auto;
+  min-height: 108px;
+  align-items: center;
+  gap: 13px;
+  padding: 11px 12px;
+  overflow: hidden;
+  background: #fff;
+  border: 2px solid #d4d8ca;
+  border-radius: 15px;
+  box-shadow: 0 4px 0 rgba(23, 33, 43, .06);
+  text-decoration: none;
+  transition: transform .15s ease, border-color .15s ease;
+}
+
+.creature-tile:hover { border-color: #6f934e; transform: translateY(-2px); }
+.creature-thumb,
+.creature-placeholder {
+  width: 82px;
+  height: 82px;
+  border-radius: 11px;
+}
+.creature-thumb { object-fit: cover; background: #f3ecd9; }
+.creature-placeholder,
+.card-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #dfedc8;
+  color: #2d5e25;
+  text-align: center;
+}
+.creature-placeholder span { font-size: 2rem; font-weight: 900; line-height: 1; }
+.creature-placeholder small { margin-top: 5px; padding: 0 5px; font-size: .62rem; font-weight: 700; }
+.group-pterosaur { background: #dcecf8; color: #245c81; }
+.group-marine-reptile { background: #d9eef0; color: #17636d; }
+.group-synapsid, .group-crocodyliform { background: #f7ddd3; color: #8d432b; }
+.creature-tile-copy { min-width: 0; }
+.creature-tile-copy strong,
+.creature-tile-copy em,
+.creature-tile-copy small { display: block; }
+.creature-tile-copy strong { font-size: 1rem; line-height: 1.15; }
+.creature-tile-copy em { margin-top: 5px; color: #5d6871; font-size: .75rem; }
+.creature-tile-copy small { margin-top: 3px; color: #416531; font-size: .72rem; font-weight: 700; }
+.friend-badge,
+.type-pill {
+  display: inline-block !important;
+  width: fit-content;
+  margin-top: 7px !important;
+  padding: 4px 7px;
+  background: #fff0c8;
+  border-radius: 999px;
+  color: #805916 !important;
+  font-size: .65rem !important;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+}
+.tile-arrow { color: #63824d; font-size: 1.25rem; }
+
+.card-top-nav { display: flex; justify-content: space-between; }
+.dinosaur-card {
+  overflow: hidden;
+  background: #fff;
+  border: 2px solid #c9d8ae;
+  border-radius: 22px;
+  box-shadow: 0 8px 0 rgba(68, 117, 46, .1);
+}
+.card-title {
+  padding: 28px clamp(20px, 5vw, 46px) 22px;
+  background: linear-gradient(120deg, #e8f2d3, #fff4d3);
+  border-bottom: 2px solid #c9d8ae;
+}
+.card-title h1 { margin: 9px 0 5px; }
+.type-pill { background: #44752e; color: #fff !important; }
+.scientific-name { margin: 0; color: #46633b; font-size: 1.2rem; }
+.name-notes { margin: 14px 0 0; color: #586267; line-height: 1.5; }
+.creature-figure { margin: 0; background: #f8f2e4; }
+.creature-figure img { display: block; width: 100%; max-height: 520px; object-fit: contain; }
+.creature-figure figcaption { padding: 10px 18px; color: var(--muted); font-size: .75rem; line-height: 1.45; }
+.creature-figure figcaption a, .card-sources a { color: #245c81; }
+.card-placeholder { min-height: 270px; background: linear-gradient(135deg, #e7f0d5, #fff0c9); }
+.card-placeholder span { font-size: 7rem; font-weight: 900; line-height: 1; opacity: .55; }
+.card-placeholder small { margin-top: 12px; font-size: .9rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.not-a-dinosaur {
+  margin: 24px clamp(20px, 5vw, 46px) 0;
+  padding: 14px 16px;
+  background: #fff1c9;
+  border-left: 6px solid #e2a234;
+  border-radius: 8px;
+  line-height: 1.5;
+}
+.fact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin: 0;
+  padding: 26px clamp(20px, 5vw, 46px);
+}
+.fact-row { padding: 13px 12px 13px 0; border-bottom: 1px solid #dfe3d7; }
+.fact-row:nth-child(odd) { margin-right: 18px; }
+.fact-row dt { color: #62705b; font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.fact-row dd { margin: 5px 0 0; font-weight: 700; line-height: 1.35; }
+.story-facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  padding: 0 clamp(20px, 5vw, 46px) 28px;
+}
+.story-facts > div, .science-note { padding: 20px; border-radius: 14px; }
+.story-facts > div { background: #edf5df; }
+.story-facts .did-you-know { background: #fff0c8; }
+.story-facts h2, .science-note h2 { margin: 0 0 8px; font-size: 1.1rem; }
+.story-facts p, .science-note p { margin: 0; line-height: 1.55; }
+.science-note { margin: 0 clamp(20px, 5vw, 46px) 24px; background: #edf2f5; color: #40515c; }
+.card-sources { padding: 17px clamp(20px, 5vw, 46px); background: #f4f4f0; border-top: 1px solid #dfe3d7; }
+.creature-pagination { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 20px; }
+.creature-pagination a { min-height: 74px; padding: 14px 17px; background: #fff; border: 2px solid #c9d8ae; border-radius: 12px; text-decoration: none; }
+.creature-pagination a:hover { border-color: #6f934e; }
+.creature-pagination small, .creature-pagination strong { display: block; }
+.creature-pagination small { margin-bottom: 5px; color: var(--muted); }
+.creature-pagination .next-card { text-align: right; }
+.not-found { padding: 42px; background: #fff; border: 2px solid #c9d8ae; border-radius: 18px; text-align: center; }
+.button-link { display: inline-block; margin-top: 10px; padding: 12px 18px; background: #44752e; border-radius: 9px; color: white; font-weight: 700; text-decoration: none; }
+
 @media (max-width: 560px) {
   .home, .page { width: min(100% - 20px, 900px); padding-top: 20px; }
   .menu-item { min-height: 100px; padding: 16px 18px; }
   .soccer-ball { width: 88px; height: 88px; }
+  .dinosaur-mascot { width: 88px; height: 88px; }
   .tournament-row { grid-template-columns: 52px minmax(0, 1fr); padding-right: 12px; }
   .tournament-icon { width: 52px; height: 52px; }
   .year { display: none; }
@@ -247,4 +487,22 @@ h1 {
   .team { font-size: .88rem; }
   .score { gap: 4px; font-size: 1rem; }
   .score b { width: 28px; height: 30px; }
+  .dinosaur-heading { grid-template-columns: 1fr 96px; gap: 12px; }
+  .dinosaur-heading img { width: 96px; height: 96px; border-radius: 20px; }
+  .sort-panel { grid-template-columns: 1fr; }
+  .sort-panel label { margin-bottom: -7px; }
+  .creature-grid { grid-template-columns: 1fr; }
+  .fact-grid, .story-facts { grid-template-columns: 1fr; }
+  .fact-row:nth-child(odd) { margin-right: 0; }
+  .card-top-nav { gap: 12px; }
+  .creature-pagination { grid-template-columns: 1fr; }
+  .creature-pagination .next-card { text-align: left; }
+}
+
+@media (min-width: 561px) and (max-width: 880px) {
+  .creature-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .creature-tile { transition: none; }
 }
