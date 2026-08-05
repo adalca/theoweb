@@ -272,7 +272,7 @@ h1 {
 .dinosaur-page {
   background:
     radial-gradient(circle at 12% 5%, rgba(244, 185, 64, .18) 0 90px, transparent 92px),
-    radial-gradient(circle at 92% 2%, rgba(93, 159, 65, .14) 0 130px, transparent 132px),
+    radial-gradient(circle at 92% 2%, rgba(55, 133, 189, .14) 0 130px, transparent 132px),
     #fbf7e9;
 }
 
@@ -304,7 +304,7 @@ h1 {
 
 .eyebrow {
   margin: 0 0 8px;
-  color: #537041;
+  color: #245c81;
   font-size: .78rem;
   font-weight: 800;
   letter-spacing: .12em;
@@ -319,9 +319,9 @@ h1 {
   margin: 22px 0 30px;
   padding: 18px 20px;
   background: #fff;
-  border: 2px solid #c9d8ae;
+  border: 2px solid #a9c6da;
   border-radius: 16px;
-  box-shadow: 0 6px 0 rgba(68, 117, 46, .1);
+  box-shadow: 0 6px 0 rgba(36, 92, 129, .1);
 }
 
 .sort-panel h2 { margin: 0; font-size: 1.15rem; }
@@ -330,8 +330,8 @@ h1 {
 .sort-panel select {
   min-height: 48px;
   padding: 0 42px 0 14px;
-  background: #f7fbef;
-  border: 2px solid #73945d;
+  background: #eef6fb;
+  border: 2px solid #4b7fa2;
   border-radius: 10px;
   color: var(--text);
   font: inherit;
@@ -341,7 +341,7 @@ h1 {
 .creature-group { margin: 34px 0; }
 .creature-group > h2 {
   margin: 0 0 14px;
-  color: #365b29;
+  color: #a94c1d;
   font-size: 1.45rem;
 }
 
@@ -367,7 +367,7 @@ h1 {
   transition: transform .15s ease, border-color .15s ease;
 }
 
-.creature-tile:hover { border-color: #6f934e; transform: translateY(-2px); }
+.creature-tile:hover { border-color: #d17a2d; transform: translateY(-2px); }
 .creature-thumb,
 .creature-placeholder {
   width: 82px;
@@ -381,8 +381,8 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #dfedc8;
-  color: #2d5e25;
+  background: #dcecf8;
+  color: #245c81;
   text-align: center;
 }
 .creature-placeholder span { font-size: 2rem; font-weight: 900; line-height: 1; }
@@ -394,7 +394,7 @@ h1 {
 .creature-tile-copy strong,
 .creature-tile-copy small { display: block; }
 .creature-tile-copy strong { font-size: 1rem; line-height: 1.15; }
-.creature-tile-copy small { margin-top: 7px; color: #416531; font-size: .75rem; font-weight: 700; }
+.creature-tile-copy small { margin-top: 7px; color: #245c81; font-size: .75rem; font-weight: 700; }
 .type-pill {
   display: inline-block !important;
   width: fit-content;
@@ -414,24 +414,24 @@ h1 {
 .dinosaur-card {
   overflow: hidden;
   background: #fff;
-  border: 2px solid #c9d8ae;
+  border: 2px solid #a9c6da;
   border-radius: 22px;
-  box-shadow: 0 8px 0 rgba(68, 117, 46, .1);
+  box-shadow: 0 8px 0 rgba(36, 92, 129, .1);
 }
 .card-title {
   padding: 28px clamp(20px, 5vw, 46px) 22px;
-  background: linear-gradient(120deg, #e8f2d3, #fff4d3);
-  border-bottom: 2px solid #c9d8ae;
+  background: linear-gradient(120deg, #dcecf8, #fff0c8);
+  border-bottom: 2px solid #a9c6da;
 }
 .card-title h1 { margin: 9px 0 5px; }
-.type-pill { background: #44752e; color: #fff !important; }
-.scientific-name { margin: 0; color: #46633b; font-size: 1.2rem; }
+.type-pill { background: #b85b20; color: #fff !important; }
+.scientific-name { margin: 0; color: #245c81; font-size: 1.2rem; }
 .name-notes { margin: 14px 0 0; color: #586267; line-height: 1.5; }
 .creature-figure { margin: 0; background: #f8f2e4; }
 .creature-figure img { display: block; width: 100%; max-height: 520px; object-fit: contain; }
 .creature-figure figcaption { padding: 10px 18px; color: var(--muted); font-size: .75rem; line-height: 1.45; }
 .creature-figure figcaption a, .card-sources a { color: #245c81; }
-.card-placeholder { min-height: 270px; background: linear-gradient(135deg, #e7f0d5, #fff0c9); }
+.card-placeholder { min-height: 270px; background: linear-gradient(135deg, #dcecf8, #fff0c8); }
 .card-placeholder span { font-size: 7rem; font-weight: 900; line-height: 1; opacity: .55; }
 .card-placeholder small { margin-top: 12px; font-size: .9rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 .not-a-dinosaur {
@@ -449,9 +449,9 @@ h1 {
   margin: 0;
   padding: 26px clamp(20px, 5vw, 46px);
 }
-.fact-row { padding: 13px 12px 13px 0; border-bottom: 1px solid #dfe3d7; }
+.fact-row { padding: 13px 12px 13px 0; border-bottom: 1px solid #d9e1e7; }
 .fact-row:nth-child(odd) { margin-right: 18px; }
-.fact-row dt { color: #62705b; font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.fact-row dt { color: #516a7a; font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 .fact-row dd { margin: 5px 0 0; font-weight: 700; line-height: 1.35; }
 .story-facts {
   display: grid;
@@ -460,20 +460,20 @@ h1 {
   padding: 0 clamp(20px, 5vw, 46px) 28px;
 }
 .story-facts > div, .science-note { padding: 20px; border-radius: 14px; }
-.story-facts > div { background: #edf5df; }
+.story-facts > div { background: #e8f4fb; }
 .story-facts .did-you-know { background: #fff0c8; }
 .story-facts h2, .science-note h2 { margin: 0 0 8px; font-size: 1.1rem; }
 .story-facts p, .science-note p { margin: 0; line-height: 1.55; }
 .science-note { margin: 0 clamp(20px, 5vw, 46px) 24px; background: #edf2f5; color: #40515c; }
-.card-sources { padding: 17px clamp(20px, 5vw, 46px); background: #f4f4f0; border-top: 1px solid #dfe3d7; }
+.card-sources { padding: 17px clamp(20px, 5vw, 46px); background: #f4f4f0; border-top: 1px solid #d9e1e7; }
 .creature-pagination { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 20px; }
-.creature-pagination a { min-height: 74px; padding: 14px 17px; background: #fff; border: 2px solid #c9d8ae; border-radius: 12px; text-decoration: none; }
-.creature-pagination a:hover { border-color: #6f934e; }
+.creature-pagination a { min-height: 74px; padding: 14px 17px; background: #fff; border: 2px solid #a9c6da; border-radius: 12px; text-decoration: none; }
+.creature-pagination a:hover { border-color: #d17a2d; }
 .creature-pagination small, .creature-pagination strong { display: block; }
 .creature-pagination small { margin-bottom: 5px; color: var(--muted); }
 .creature-pagination .next-card { text-align: right; }
-.not-found { padding: 42px; background: #fff; border: 2px solid #c9d8ae; border-radius: 18px; text-align: center; }
-.button-link { display: inline-block; margin-top: 10px; padding: 12px 18px; background: #44752e; border-radius: 9px; color: white; font-weight: 700; text-decoration: none; }
+.not-found { padding: 42px; background: #fff; border: 2px solid #a9c6da; border-radius: 18px; text-align: center; }
+.button-link { display: inline-block; margin-top: 10px; padding: 12px 18px; background: #245c81; border-radius: 9px; color: white; font-weight: 700; text-decoration: none; }
 
 @media (max-width: 560px) {
   .home, .page { width: min(100% - 20px, 900px); padding-top: 20px; }
