@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Choose any two cars from Theo's Webhouse and compare their main facts side by side.">
+  <title>Compare cars | Theo's Webhouse</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="car-page">
+  <main class="page car-compare-page">
+    <a class="back-link" href="index.html">&larr; Cars</a>
+    <header class="compare-heading">
+      <div>
+        <p class="eyebrow">Theo's head-to-head garage</p>
+        <h1>Compare cars!</h1>
+        <p>Choose two cars to see their facts lined up side by side. There is no winner&mdash;just two amazing machines to explore.</p>
+      </div>
+      <span aria-hidden="true">&#8644;</span>
+    </header>
+
+    <section class="compare-controls" aria-labelledby="choose-cars-heading">
+      <h2 id="choose-cars-heading">Choose your cars</h2>
+      <div class="compare-picker-grid">
+        <label class="compare-picker" for="compare-car-one"><span>Car one</span><select id="compare-car-one"></select></label>
+        <label class="compare-picker" for="compare-car-two"><span>Car two</span><select id="compare-car-two"></select></label>
+      </div>
+      <p id="compare-status" class="compare-status" aria-live="polite"></p>
+    </section>
+
+    <div id="comparison" aria-live="polite"></div>
+  </main>
+  <script src="data.js"></script>
+  <script src="modern-data.js"></script>
+  <script src="image-data.js"></script>
+  <script src="compare.js"></script>
+</body>
+</html>

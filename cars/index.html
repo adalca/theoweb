@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore 12 famous car makers and 144 current and classic cars.">
+  <title>Cars | Theo's Webhouse</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="car-page">
+  <main class="page car-directory">
+    <a class="back-link" href="../index.html">&larr; Main menu</a>
+    <header class="car-heading">
+      <div>
+        <p class="eyebrow">Theo's amazing auto show</p>
+        <h1>Cars!</h1>
+        <p class="intro">Pick a car maker, then meet today's favorites and legends from long ago.</p>
+      </div>
+      <img src="../assets/images/cars/cute-car-mascot.png" alt="A cute smiling orange and blue car">
+    </header>
+    <a class="car-compare-cta" href="compare.html">
+      <span class="car-compare-icon" aria-hidden="true">&#8644;</span>
+      <span><strong>Compare!</strong><small>Pick any two cars and see their facts side by side.</small></span>
+      <span class="car-compare-arrow" aria-hidden="true">&rarr;</span>
+    </a>
+    <section aria-labelledby="makers-heading">
+      <div class="car-section-heading">
+        <h2 id="makers-heading">Choose a manufacturer</h2>
+        <p>12 makers &middot; 144 cars</p>
+      </div>
+      <div id="manufacturer-list" class="manufacturer-grid"></div>
+    </section>
+  </main>
+  <script src="data.js"></script>
+  <script src="modern-data.js"></script>
+  <script src="directory.js"></script>
+</body>
+</html>
