@@ -55,14 +55,6 @@
       var detailText = [match.date, match.location, match.note].filter(Boolean).join(" · ");
       details.appendChild(document.createTextNode(detailText));
 
-      var highlights = document.createElement("a");
-      highlights.className = "highlight-link";
-      highlights.href = "https://www.youtube.com/results?search_query=" + encodeURIComponent(tournament.title + " " + match.home + " " + match.away + " highlights");
-      highlights.target = "_blank";
-      highlights.rel = "noreferrer";
-      highlights.textContent = "Highlights";
-      details.appendChild(highlights);
-
       row.appendChild(home);
       row.appendChild(score);
       row.appendChild(away);

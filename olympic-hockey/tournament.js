@@ -50,14 +50,6 @@
     var details = document.createElement("div");
     details.className = "match-details";
     details.appendChild(document.createTextNode([formatDate(match.date), match.note].filter(Boolean).join(" · ")));
-    var highlights = document.createElement("a");
-    highlights.className = "highlight-link";
-    highlights.href = "https://www.youtube.com/results?search_query=" + encodeURIComponent(olympics.year + " Olympic hockey " + gender + " " + match.team1 + " " + match.team2);
-    highlights.target = "_blank";
-    highlights.rel = "noreferrer";
-    highlights.textContent = "Highlights";
-    details.appendChild(highlights);
-
     row.appendChild(team1);
     row.appendChild(score);
     row.appendChild(team2);
