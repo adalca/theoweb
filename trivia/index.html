@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Play 1,000 kid-friendly trivia questions about the world, space, cars, dinosaurs, stories, soccer, and mighty machines.">
+  <title>Theo's Trivia | Theo's Webhouse</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="trivia-page">
+  <main class="page trivia-shell">
+    <a class="back-link" href="../index.html">&larr; Main menu</a>
+
+    <section id="topic-screen" class="trivia-topic-screen" aria-labelledby="trivia-title">
+      <header class="trivia-heading">
+        <div>
+          <p class="eyebrow">Theo's question clubhouse</p>
+          <h1 id="trivia-title">Trivia!</h1>
+          <p class="intro">Pick a favorite topic, or mix everything together. There is always another question waiting.</p>
+        </div>
+        <span class="trivia-hero-mark" aria-hidden="true">?</span>
+      </header>
+      <div class="topic-grid" aria-label="Choose a trivia topic">
+        <button class="topic-button topic-mix" type="button" data-topic="all"><span aria-hidden="true">★</span><strong>Surprise Mix</strong><small>Everything shuffled together</small></button>
+        <button class="topic-button topic-world" type="button" data-topic="world"><span aria-hidden="true">◎</span><strong>Countries &amp; regions</strong><small>Our amazing world</small></button>
+        <button class="topic-button topic-space" type="button" data-topic="space"><span aria-hidden="true">↗</span><strong>Space &amp; rockets</strong><small>Blast beyond Earth</small></button>
+        <button class="topic-button topic-cars" type="button" data-topic="cars"><span aria-hidden="true">◇</span><strong>Cars</strong><small>Road-going favorites</small></button>
+        <button class="topic-button topic-dinosaurs" type="button" data-topic="dinosaurs"><span aria-hidden="true">◀</span><strong>Dinosaurs</strong><small>And prehistoric friends</small></button>
+        <button class="topic-button topic-stories" type="button" data-topic="stories"><span aria-hidden="true">▤</span><strong>Hotel Flamingo</strong><small>The first four stories</small></button>
+        <button class="topic-button topic-soccer" type="button" data-topic="soccer"><span aria-hidden="true">●</span><strong>World Cup soccer</strong><small>2022 and 2026</small></button>
+        <button class="topic-button topic-trucks" type="button" data-topic="trucks"><span aria-hidden="true">■</span><strong>Trucks &amp; machines</strong><small>Dig, lift, carry, rescue</small></button>
+      </div>
+    </section>
+
+    <section id="quiz-screen" class="trivia-quiz-screen" aria-labelledby="question-text" hidden>
+      <div class="quiz-toolbar">
+        <button id="change-topic" class="change-topic-button" type="button">&larr; Change topic</button>
+        <span id="current-topic" class="current-topic"></span>
+      </div>
+      <article class="question-card">
+        <p id="difficulty-label" class="question-kicker"></p>
+        <h1 id="question-text" tabindex="-1"></h1>
+        <div id="answer-list" class="answer-list" aria-label="Answer choices"></div>
+        <div id="feedback" class="answer-feedback" aria-live="polite" hidden>
+          <p id="feedback-title" class="feedback-title"></p>
+          <p id="feedback-fact" class="feedback-fact"></p>
+          <button id="next-question" class="next-question-button" type="button">Next question &rarr;</button>
+        </div>
+      </article>
+    </section>
+
+    <section id="trivia-error" class="trivia-error" hidden>
+      <h1>These questions wandered away.</h1>
+      <p>Please return to the main menu and try opening Trivia again.</p>
+    </section>
+  </main>
+
+  <script src="../cars/data.js"></script>
+  <script src="../dinosaurs/data.js"></script>
+  <script src="../trucks/data.js"></script>
+  <script src="builder.js"></script>
+  <script src="data/world.js"></script>
+  <script src="data/space.js"></script>
+  <script src="data/cars.js"></script>
+  <script src="data/dinosaurs.js"></script>
+  <script src="data/stories.js"></script>
+  <script src="data/soccer.js"></script>
+  <script src="data/trucks.js"></script>
+  <script src="deck.js"></script>
+  <script src="trivia.js"></script>
+</body>
+</html>
