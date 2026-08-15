@@ -92,7 +92,7 @@
     document.querySelector("[data-topic='all']").focus({ preventScroll: true });
   }
 
-  if (!window.TRIVIA_QUESTIONS || window.TRIVIA_QUESTIONS.length !== 1143 || !window.TRIVIA_DECK) {
+  if (!window.TRIVIA_QUESTIONS || window.TRIVIA_QUESTIONS.length !== 1301 || !window.TRIVIA_DECK) {
     fail();
     return;
   }

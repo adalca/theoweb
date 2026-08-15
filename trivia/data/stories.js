@@ -13,7 +13,7 @@
     ["The Glitz", "What is the name of Ronald Ruffian's rival hotel?", ["The Sunshine", "The Royal Nest", "The Pink Palace", "The Grand Giraffe"], "The fancy Glitz stands across Animal Boulevard from Hotel Flamingo."],
     ["A lion", "What kind of animal is rival hotel owner Ronald Ruffian?", ["A bear", "A lemur", "A giraffe", "A flamingo"], "Ronald Ruffian owns the Glitz and dislikes Hotel Flamingo's success."],
     ["Flamingos", "Which birds help put on a spectacular show for Hotel Flamingo's grand reopening?", ["Penguins", "Owls", "Parrots", "Pigeons"], "Ms. Fragranti and her flamingos bring music, color, and excitement."],
-    ["Mr. Roachford", "Who arrives to inspect Hotel Flamingo in the first book?", ["King Penguin", "Mac Macaw", "Alfonso Fastbeak", "Mr. Ruffian"], "The inspection becomes a crucial test for Anna and her new team."],
+    ["Mr. Grayson", "Who arrives to inspect Hotel Flamingo in the first book?", ["Mr. Roachford", "King Penguin", "Alfonso Fastbeak", "Mr. Ruffian"], "Mr. Grayson's inspection becomes a crucial test for Anna and her new team."],
     ["Animal Boulevard", "On what street are Hotel Flamingo and the Glitz located?", ["Penguin Parade", "Jungle Road", "Sunshine Street", "Carnival Avenue"], "Animal Boulevard is home to many animal businesses and hotels."],
     ["King and Queen Penguin", "Which royal guests choose Hotel Flamingo during Holiday Heatwave?", ["King and Queen Lion", "Prince and Princess Parrot", "Duke and Duchess Dog", "Lord and Lady Llama"], "The penguin royals need special care during extremely hot weather."],
     ["A heatwave", "What makes caring for penguin guests especially difficult in the second story?", ["A snowstorm", "A flood", "An earthquake", "A sandstorm"], "The blazing heat causes an ice shortage and makes the hotel hard to cool."],
@@ -37,15 +37,40 @@
     ["Peston Crumbletart", "Which chef comes from the Fat Cat restaurant?", ["Laurence Toot-Toot", "Madame Le Pig", "Ronald Ruffian", "Alfonso Fastbeak"], "Peston Crumbletart is one of Madame Le Pig's contest rivals."],
     ["Laurence Toot-Toot", "Which chef represents the Glitz in the cooking contest?", ["Peston Crumbletart", "Madame Le Pig", "Lemmy", "Mac Macaw"], "Laurence Toot-Toot cooks for Hotel Flamingo's grand rival."],
     ["A stunt pigeon", "What kind of animal is record-chasing Alfonso Fastbeak?", ["A chef pig", "A hotel bear", "A singing owl", "A dancing flamingo"], "Alfonso crashes onto the hotel roof while practicing a stunt."],
-    ["An octopus", "What kind of animal is flamboyant guest Simon Suckerlot?", ["A giraffe", "A lion", "A mouse", "A sheepdog"], "An octopus guest brings eight arms' worth of changing needs." ]
+    ["An octopus", "What kind of animal is flamboyant guest Simon Suckerlot?", ["A giraffe", "A lion", "A mouse", "A sheepdog"], "An octopus guest brings eight arms' worth of changing needs."],
+    ["Great Aunt Mathilde", "Who leaves Hotel Flamingo to Anna?", ["Madame Le Pig", "Ms. Fragranti", "Aunt Trixie", "Queen Penguin"], "Anna inherits the hotel from her Great Aunt Mathilde."],
+    ["Three years", "About how long had Hotel Flamingo gone without guests when Anna arrived?", ["Three days", "Three weeks", "Three months", "Thirty years"], "The hotel had been empty of guests for three years and needed a fresh start."],
+    ["T. Bear and Lemmy", "Which two loyal staff members are still at the hotel when Anna arrives?", ["Stella and Squeak", "Madame Le Pig and Hilary", "Eva and Ms. Fragranti", "Wilbur and Mac"], "T. Bear and Lemmy stayed because the hotel was also their home."],
+    ["A cat", "What kind of animal is hotel inspector Mr. Grayson?", ["A cockroach", "A lion", "A bear", "A rat"], "Mr. Grayson is a slinky cat whose inspection worries the hotel team."],
+    ["Mr. Roachford and the cockroaches", "Who helps when the swimming-pool pipes become blocked?", ["The royal penguins", "The Nocturnal Animals", "The Highland cows", "The flamingo quartet"], "The cockroach guests can reach places where the larger hotel staff cannot."],
+    ["A hippo", "What kind of animal is cleaner Hilary?", ["A koala", "A giraffe", "A pig", "A flamingo"], "Hilary Hippo is devoted to making the hotel spotless."],
+    ["Dust", "What is cleaner Hilary Hippo allergic to?", ["Grass", "Salt", "Ice", "Flowers"], "Being allergic to dust is inconvenient for a cleaner, but Hilary works hard anyway."],
+    ["A koala", "What kind of animal is hotel waitress Eva?", ["A mouse", "A zebra", "A penguin", "A warthog"], "Eva Koala joins the new team that helps Anna restore the hotel."],
+    ["Anna", "Who rescues Ronald Ruffian from the storm in Carnival Caper?", ["Lemmy", "Mr. Sweet", "Mac Macaw", "Wilbur"], "Even though Ruffian is her rival, Anna helps him when he is in danger."],
+    ["Bubbles", "What comes out of the flamingo float's beak during the carnival?", ["Confetti", "Water", "Feathers", "Smoke"], "The hotel's carnival float blows bubbles from its flamingo beak."],
+    ["A ballroom", "What hidden room do Anna and Stella discover downstairs?", ["A cinema", "A library", "A garage", "A greenhouse"], "The hidden ballroom gives the hotel a wonderful space for music and dancing."],
+    ["A carnival float", "What does Stella build for the parade?", ["A speedboat", "A treehouse", "A rocket", "A train"], "Stella uses her building skills to create Hotel Flamingo's parade float."],
+    ["The manager", "What job does Mr. Sweet do for the Nocturnal Animals?", ["The drummer", "The singer", "The chef", "The driver"], "Mr. Sweet manages the famous band during its secret hotel stay."],
+    ["Wilbur", "Who does Hilary Hippo offer to groom in Carnival Caper?", ["Mac Macaw", "Mr. Sweet", "Ronald Ruffian", "Kool Bananas"], "Hilary offers her careful grooming help to Wilbur the sheepdog."],
+    ["Lemmy", "Which Hotel Flamingo worker is a huge Nocturnal Animals fan?", ["T. Bear", "Stella", "Squeak", "Eva"], "Lemmy is thrilled when the famous band comes to stay."],
+    ["A bush baby", "What kind of animal is Nocturnal Animals drummer Kool Bananas?", ["A gorilla", "A parrot", "A lemur", "A bat"], "Kool Bananas is a bush baby and plays drums in the band."],
+    ["Last place", "Where does Madame Le Pig finish in the Battle of the Chefs?", ["First place", "Second place", "A tie for first", "She does not compete"], "The result is disappointing, but the story values confidence and teamwork more than a trophy."],
+    ["Peston Crumbletart", "Who does Mr. Grayson declare the greatest chef on Animal Boulevard?", ["Madame Le Pig", "Laurence Toot-Toot", "Anna Dupont", "Ronald Ruffian"], "Mr. Grayson awards the top honor to Peston Crumbletart."],
+    ["A hedgehog", "What kind of animal is Laurence Toot-Toot, chef at the Glitz?", ["A cat", "A pig", "A pigeon", "A cow"], "Laurence Toot-Toot is the hedgehog chef competing for the Glitz."],
+    ["Grass intolerant", "What surprising food problem does Mrs. Horntop reveal?", ["She cannot eat salt", "She dislikes fruit", "She is allergic to water", "She cannot eat nuts"], "The Highland cow visits partly to sample grasses, making her intolerance especially awkward."],
+    ["Three kitchens", "What does Anna ask Stella to build in one week for the cooking contest?", ["Three stages", "Three dining rooms", "Three swimming pools", "Three lifts"], "Each competing chef needs a kitchen for the Battle of the Chefs."],
+    ["Salt", "What must be added to Simon Suckerlot's water?", ["Sugar", "Mud", "Ice cream", "Grass"], "The coconut octopus needs extremely salty water, so Lemmy searches for lots of salt."],
+    ["Roasted fleas", "What unusual appetizer does Madame Le Pig make with redcurrant sauce?", ["Roasted flies", "Seaweed soup", "Grass cakes", "Mud pies"], "Roasted fleas with redcurrant sauce is Madame Le Pig's contest appetizer."],
+    ["Fly", "What does Ms. Fragranti help Alfonso Fastbeak learn to do again?", ["Cook", "Swim", "Sing", "Dance"], "After his crash, Alfonso needs confidence and practice before he can fly again." ]
   ];
   const openings = [
     (q) => q,
     (q) => `Hotel Flamingo memory test: ${q}`,
     (q) => `Think about the first four Hotel Flamingo stories. ${q}`,
-    (q) => `Which choice completes this story fact? ${q}`
+    (q) => `Which choice completes this story fact? ${q}`,
+    (q) => `A guest at Hotel Flamingo asks: ${q}`
   ];
   const raw = [];
   facts.forEach(([answer, question, distractors, explanation]) => openings.forEach((opening) => raw.push({ question: opening(question), answer, distractors, explanation, sourceLabel: "Alex Milway: Hotel Flamingo series", sourceUrl: OFFICIAL })));
-  window.TRIVIA_BUILDER.addTopic("stories", 142, raw);
+  window.TRIVIA_BUILDER.addTopic("stories", 300, raw);
 }());

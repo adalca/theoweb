@@ -24,11 +24,11 @@ vm.createContext(context);
 ].forEach((file) => vm.runInContext(fs.readFileSync(path.join(root, file), "utf8"), context, { filename: file }));
 
 const questions = context.window.TRIVIA_QUESTIONS;
-const expected = { world: 143, space: 143, cars: 143, dinosaurs: 143, stories: 142, soccer: 143, bluey: 143, trucks: 143 };
+const expected = { world: 143, space: 143, cars: 143, dinosaurs: 143, stories: 300, soccer: 143, bluey: 143, trucks: 143 };
 const errors = [];
 const ids = new Set();
 const prompts = new Set();
-if (questions.length !== 1143) errors.push(`Expected 1143 questions, found ${questions.length}.`);
+if (questions.length !== 1301) errors.push(`Expected 1301 questions, found ${questions.length}.`);
 Object.entries(expected).forEach(([topic, count]) => {
   const found = questions.filter((item) => item.topic === topic).length;
   if (found !== count) errors.push(`${topic}: expected ${count}, found ${found}.`);
@@ -42,7 +42,7 @@ questions.forEach((item, index) => {
   if (new Set(item.choices).size !== item.choices.length) errors.push(`${item.id}: duplicate choices.`);
   if (!Number.isInteger(item.correctIndex) || !item.choices[item.correctIndex]) errors.push(`${item.id}: invalid correctIndex.`);
   ["explanation", "sourceLabel", "sourceUrl"].forEach((key) => { if (!item[key]) errors.push(`${item.id}: missing ${key}.`); });
-  if (!item.question || index > 1143) errors.push(`${item.id}: invalid question.`);
+  if (!item.question || index > 1301) errors.push(`${item.id}: invalid question.`);
 });
 
 Object.keys(expected).concat("all").forEach((topic) => {
@@ -60,4 +60,4 @@ if (errors.length) {
   console.error(errors.join("\n"));
   process.exit(1);
 }
-console.log("Trivia validation passed: 1,143 unique questions across 8 topic banks; schemas and decks are valid.");
+console.log("Trivia validation passed: 1,301 unique questions across 8 topic banks; schemas and decks are valid.");
