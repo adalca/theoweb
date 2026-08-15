@@ -1295,6 +1295,7 @@ h1 {
 .topic-dinosaurs { background: #d9edf2; color: #20556b; }
 .topic-stories { background: #ffd8e4; color: #7a2948; }
 .topic-soccer { background: #ffdfad; color: #713315; }
+.topic-bluey { background: #cfe8ff; color: #174f88; }
 .topic-trucks { background: #ffe67f; color: #4d4315; }
 .topic-button:focus-visible, .answer-button:focus-visible, .change-topic-button:focus-visible, .next-question-button:focus-visible { outline: 5px solid #1967a3; outline-offset: 4px; }
 .quiz-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 12px 0 20px; }

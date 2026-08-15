@@ -9,6 +9,7 @@
     dinosaurs: "Dinosaurs",
     stories: "Hotel Flamingo",
     soccer: "World Cup soccer",
+    bluey: "Bluey",
     trucks: "Trucks & machines"
   };
   const difficultyNames = { easy: "Warm-up", standard: "Think it through", challenge: "Big challenge" };
@@ -91,7 +92,7 @@
     document.querySelector("[data-topic='all']").focus({ preventScroll: true });
   }
 
-  if (!window.TRIVIA_QUESTIONS || window.TRIVIA_QUESTIONS.length !== 1000 || !window.TRIVIA_DECK) {
+  if (!window.TRIVIA_QUESTIONS || window.TRIVIA_QUESTIONS.length !== 1143 || !window.TRIVIA_DECK) {
     fail();
     return;
   }
