@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Golf seasons</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="golf.css">
+</head>
+<body class="golf-page" data-golf-view="years">
+  <main class="page golf-shell">
+    <a class="back-link" href="../index.html">← Main menu</a>
+    <header class="golf-heading">
+      <div>
+        <p class="golf-eyebrow">Men's professional golf</p>
+        <h1>Golf seasons</h1>
+        <p>Four majors. THE PLAYERS. The TOUR Championship.</p>
+        <p class="golf-heading-detail">Pick a year to explore the tournaments and their results.</p>
+      </div>
+      <img class="golf-hero-mark" src="golf-mark.svg" alt="">
+    </header>
+    <div id="golf-content" class="golf-year-list" aria-live="polite"></div>
+    <noscript><p>Enable JavaScript to explore golf seasons and results.</p></noscript>
+  </main>
+  <script src="data/seasons.js"></script>
+  <script src="golf.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+.golf-page { background: #f3f7fa; color: #173f5f; }
+.golf-shell { width: min(1040px, calc(100% - 28px)); }
+.golf-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 150px;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 32px;
+  padding: 28px 30px;
+  background: #173f5f;
+  border-radius: 20px;
+  border-bottom: 7px solid #f4ad31;
+  color: #fff;
+}
+.golf-heading h1 { margin: 8px 0 16px; }
+.golf-heading p { margin: 0; line-height: 1.5; }
+.golf-heading .golf-eyebrow { color: #ffd382; }
+.golf-heading .golf-heading-detail { margin-top: 8px; color: #d6e6f2; }
+.golf-hero-mark { width: 100%; }
+.golf-eyebrow {
+  margin: 0 0 10px;
+  color: #315d7d;
+  font-size: .875rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.golf-year-list, .golf-tournament-list { display: grid; gap: 14px; }
+.golf-year-row {
+  display: grid;
+  grid-template-columns: 90px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 18px;
+  padding: 14px 20px 14px 14px;
+  border: 2px solid #b7ccdc;
+  border-radius: 14px;
+  background: #fff;
+  text-decoration: none;
+}
+.golf-year-row:hover, .golf-tournament-card:hover { border-color: #315d7d; }
+.golf-year-badge {
+  display: grid;
+  min-height: 64px;
+  place-items: center;
+  border-radius: 10px;
+  background: #dcecf8;
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+}
+.golf-year-copy strong, .golf-year-copy small { display: block; }
+.golf-year-copy strong { font-size: 1.125rem; }
+.golf-year-copy small { margin-top: 6px; color: #52697b; font-size: .875rem; }
+.golf-arrow { font-size: 1.75rem; font-weight: 800; }
+.golf-subheading { margin: 0 0 24px; }
+.golf-subheading h1 { margin-bottom: 16px; }
+.golf-subheading p:last-child { color: #52697b; line-height: 1.5; }
+.golf-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.golf-controls { margin: 0 0 20px; }
+.golf-controls label { display: flex; align-items: center; gap: 10px; font-weight: 700; }
+.golf-page select, .golf-page input, .golf-button {
+  min-height: 46px;
+  padding: 10px 14px;
+  border: 2px solid #b7ccdc;
+  border-radius: 9px;
+  background: #fff;
+  color: #173f5f;
+  font: inherit;
+}
+.golf-filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.golf-button { cursor: pointer; font-weight: 700; text-decoration: none; }
+.golf-button[aria-pressed="true"] { background: #173f5f; border-color: #173f5f; color: #fff; }
+.golf-page button:focus-visible, .golf-page input:focus-visible,
+.golf-page select:focus-visible, .golf-table-wrap:focus-visible {
+  outline: 4px solid #c37a00;
+  outline-offset: 3px;
+}
+.golf-tournament-card {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr) minmax(230px, .85fr) 20px;
+  gap: 18px;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #b7ccdc;
+  border-radius: 14px;
+  background: #fff;
+  text-decoration: none;
+}
+.golf-date { font-size: .875rem; font-weight: 700; line-height: 1.5; }
+.golf-date strong { display: block; margin-bottom: 4px; font-size: 1.375rem; }
+.golf-tournament-copy h2 { margin: 10px 0 8px; font-size: 1.375rem; line-height: 1.25; }
+.golf-tournament-copy p { margin: 0; color: #52697b; font-size: .875rem; line-height: 1.5; }
+.golf-tag {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 6px;
+  background: #dcecf8;
+  color: #173f5f;
+  font-size: .875rem;
+  font-weight: 800;
+}
+.golf-tag-major { background: #ffe5ae; }
+.golf-leaders { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.golf-leaders li { display: grid; grid-template-columns: 32px minmax(0, 1fr) 36px; gap: 8px; }
+.golf-place { font-weight: 800; }
+.golf-score { color: #8b4f00; font-weight: 800; text-align: right; }
+.golf-card-leaders { font-size: .875rem; }
+.golf-status { color: #52697b; font-weight: 700; }
+.golf-winner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 18px 0 22px;
+  padding: 22px;
+  background: #fff1d2;
+  border: 2px solid #e3b05a;
+  border-radius: 14px;
+}
+.golf-winner > span { font-size: 2.75rem; }
+.golf-winner h2 { margin: 0 0 6px; font-size: 1.5rem; }
+.golf-winner p { margin: 0; line-height: 1.5; }
+.golf-note { margin: 20px 0; color: #52697b; line-height: 1.6; }
+.golf-search { margin: 24px 0 12px; }
+.golf-search label { display: block; margin-bottom: 8px; font-weight: 700; }
+.golf-search input { width: min(100%, 360px); }
+.golf-result-count { color: #52697b; font-size: .875rem; }
+.golf-table-wrap { overflow-x: auto; border: 2px solid #b7ccdc; border-radius: 12px; }
+.golf-table { width: 100%; min-width: 620px; border-collapse: collapse; background: #fff; }
+.golf-table caption { padding: 14px; color: #173f5f; font-weight: 800; text-align: left; }
+.golf-table th, .golf-table td { padding: 14px 12px; text-align: center; }
+.golf-table thead th { background: #173f5f; color: #fff; font-size: .875rem; }
+.golf-table tbody th { text-align: left; }
+.golf-table td, .golf-table tbody th { border-top: 1px solid #dce5ed; }
+.golf-table td { font-variant-numeric: tabular-nums; }
+.golf-table tbody tr:nth-child(even) { background: #f3f7fa; }
+.golf-table tbody tr.is-winner { background: #fff1d2; }
+.golf-player-country { display: block; margin-top: 5px; font-size: .875rem; font-weight: 400; }
+.golf-playoff { margin: 24px 0; }
+.golf-playoff .golf-table { min-width: 300px; }
+.golf-empty { padding: 28px; border: 2px solid #b7ccdc; border-radius: 14px; background: #fff; }
+.golf-empty h1 { font-size: 2rem; }
+.golf-empty p { line-height: 1.6; }
+.golf-source { margin: 26px 0 0; color: #52697b; font-size: .875rem; line-height: 1.6; }
+.golf-source a { font-weight: 700; }
+.golf-page [hidden] { display: none; }
+@media (max-width: 800px) {
+  .golf-tournament-card { grid-template-columns: 78px minmax(0, 1fr) 20px; gap: 12px; }
+  .golf-card-leaders { grid-column: 2; border-top: 1px solid #dce5ed; padding-top: 14px; }
+  .golf-tournament-card > .golf-arrow { grid-column: 3; grid-row: 1; }
+}
+@media (max-width: 540px) {
+  .golf-heading { grid-template-columns: minmax(0, 1fr) 72px; padding: 22px 18px; gap: 8px; }
+  .golf-heading h1 { font-size: 2.25rem; }
+  .golf-hero-mark { align-self: start; }
+  .golf-year-row { grid-template-columns: 68px minmax(0, 1fr) 18px; gap: 12px; padding: 12px; }
+  .golf-year-badge { font-size: 1.25rem; }
+  .golf-tournament-card { padding: 14px; grid-template-columns: 64px minmax(0, 1fr) 16px; }
+  .golf-tournament-copy h2 { font-size: 1.125rem; }
+  .golf-card-leaders { grid-column: 1 / -1; }
+  .golf-winner { gap: 12px; padding: 18px 14px; }
+  .golf-winner h2 { font-size: 1.25rem; }
+}

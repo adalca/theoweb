@@ -65,6 +65,16 @@ h1 {
 
 .main-menu { display: grid; gap: 16px; }
 
+.menu-item.golf-menu-item { background: #dcecf8; border-color: #173f5f; }
+.menu-item.golf-menu-item:hover { background: #c6e0f4; }
+.golf-menu-mark {
+  flex: 0 0 auto;
+  width: clamp(88px, 17vw, 132px);
+  height: clamp(88px, 17vw, 132px);
+}
+.golf-menu-label { line-height: 1; }
+.golf-menu-label small { display: block; margin-top: 12px; font-size: .42em; line-height: 1.3; }
+
 .menu-item {
   display: flex;
   min-height: 120px;
